@@ -3,7 +3,7 @@ import sys
 
 error = "Sorry, but the range is between 1 and the number of lines in the code which is"
 
-def overwriteAttendanceFile(file_name, new_code):
+def overwriteFile(file_name, new_code):
     with open(file_name, 'w') as f:
         f.write("")
     with open(file_name, 'w') as f:
@@ -51,10 +51,10 @@ if __name__ == "__main__":
         lines = getFileLines(file_name)
         new_code = indent(lines, int(sys.argv[3]), int(sys.argv[4]))
         if new_code != "error":
-            overwriteAttendanceFile(file_name, new_code)
+            overwriteFile(file_name, new_code)
 
     if sys.argv[2] == "u":
         lines = getFileLines(file_name)
         new_code = unindent(lines, int(sys.argv[3]), int(sys.argv[4]))
         if new_code != "error":
-           overwriteAttendanceFile(file_name, new_code)
+           overwriteFile(file_name, new_code)
