@@ -46,15 +46,29 @@ def unindent(lines, start, finish):
 
 if __name__ == "__main__":
     file_name = sys.argv[1]
+    try:
+        arg = sys.argv[5] # implies user wants to edit their file in safe mode
+    except:
+        arg = ""
 
     if sys.argv[2] == "i":
         lines = getFileLines(file_name)
         new_code = indent(lines, int(sys.argv[3]), int(sys.argv[4]))
         if new_code != "error":
-            overwriteFile(file_name, new_code)
+            if arg == "":
+                overwriteFile(file_name, new_code)
+            else:
+                # creates a file with the overwritten code that you can paste into your target file
+                with open("indented_code.txt", 'w+') as f:
+                    f.write(new_code)
 
     if sys.argv[2] == "u":
         lines = getFileLines(file_name)
         new_code = unindent(lines, int(sys.argv[3]), int(sys.argv[4]))
         if new_code != "error":
-           overwriteFile(file_name, new_code)
+            if arg == "":
+                overwriteFile(file_name, new_code)
+            else:
+                # creates a file with the overwritten code that you can paste into your target file
+                with open("unindented_code.txt", 'w+') as f:
+                    f.write(new_code)
