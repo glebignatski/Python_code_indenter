@@ -1,8 +1,8 @@
 # Python_code_indenter
 Python Program for adjusting the indentation of your Python code given a line range (start, finish).
 
-Command format: python3 adjust_columnar_code.py <i/u> <file_name> S F <optional>
-where i/u are indent or unindent, file_name is the name of the Python file to be adjusted, 
+Command format: python3 adjust_columnar_code.py <file_name> <i/u> S F <optional>
+where file_name is the name of the Python file to be adjusted, i/u are indent or unindent,
 S and F correspond to the range of lines you would like to indent/unindent (1 to number of lines in your code).
 In addition, you can add an optional parameter like "safe" as in "safe mode" that would, instead of overwriting the target file,
 save the edited code to a text file from which you can select the entire code and copy it back to the targeted file. \
