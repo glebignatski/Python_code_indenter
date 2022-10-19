@@ -1,7 +1,8 @@
 # Python_Code_Indenter
 Python Program for adjusting the indentation of your Python code given a line range (start, finish). <br/>
 
-Command format: <i> python3 adjust_columnar_code.py <file_name> <i/u> S F </i> <optional>
+<u> Command format </u> <br/>
+<i> python3 adjust_columnar_code.py <file_name> <i/u> S F </i> <optional>
 where file_name is the name of the Python file to be adjusted, i/u are indent or unindent,
 S and F correspond to the range of lines you would like to indent/unindent (1 to number of lines in your code). <br/> <br/>
 In addition, you can add an optional parameter like "safe" as in "safe mode" that would, instead of overwriting the target file,
@@ -10,7 +11,7 @@ e.g., if you are using a line numbered editor like Sublime, then you just need t
 the line numbers you see: <br/> <br/>
   <i> python3 adjust_columnar_code.py calculator.py i 1 10 </i>
   will indent lines 1 through 10 inclusive. <br/> <br/>
-  <i> python3 adjust_columnar_code.py calculator.py i 1 10 <u> safe </u> </i>
+  <i> python3 adjust_columnar_code.py calculator.py i 1 10 safe </i>
   will create a new file and put the updated code there that is indented/unindented <br/>
 
 Also, if there is an indentation command line error and you are using Sublime, you can select all, go to View, then Indentation,
