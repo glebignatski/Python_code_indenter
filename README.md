@@ -9,6 +9,7 @@ save the edited code to a text file from which you can select the entire code an
 e.g., if you are using a line numbered editor like Sublime, then you just need to specify
 the line numbers you see: <br/> <br/>
 "python3 adjust_columnar_code.py calculator.py i 1 10" will indent lines 1 through 10 inclusive. <br/> <br/>
+"python3 adjust_columnar_code.py calculator.py i 1 10 safe" will create a new file and put the updated code there that is indented/unindented <br/>
 
 Also, if there is an indentation command line error and you are using Sublime, you can select all, go to View, then Indentation,
 and "Convert Indentation to Spaces".
