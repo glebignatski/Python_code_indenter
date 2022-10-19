@@ -10,7 +10,7 @@ e.g., if you are using a line numbered editor like Sublime, then you just need t
 the line numbers you see: <br/> <br/>
   <i> python3 adjust_columnar_code.py calculator.py i 1 10 </i>
   will indent lines 1 through 10 inclusive. <br/> <br/>
-  <i> python3 adjust_columnar_code.py calculator.py i 1 10 safe </i>
+  <i> python3 adjust_columnar_code.py calculator.py i 1 10 <u> safe </u> </i>
   will create a new file and put the updated code there that is indented/unindented <br/>
 
 Also, if there is an indentation command line error and you are using Sublime, you can select all, go to View, then Indentation,
