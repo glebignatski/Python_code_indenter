@@ -1,5 +1,5 @@
 # Python_Code_Indenter
-Python Program for adjusting the indentation of your Python code given a line range (start, finish). <br>
+Python Program for adjusting the indentation of your Python code given a line range (start, finish). <br/> <br/>
 
 Command format: python3 adjust_columnar_code.py <file_name> <i/u> S F <optional>
 where file_name is the name of the Python file to be adjusted, i/u are indent or unindent,
