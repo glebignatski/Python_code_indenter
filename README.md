@@ -8,8 +8,10 @@ In addition, you can add an optional parameter like "safe" as in "safe mode" tha
 save the edited code to a text file from which you can select the entire code and copy it back to the targeted file. <br/> <br/>
 e.g., if you are using a line numbered editor like Sublime, then you just need to specify
 the line numbers you see: <br/> <br/>
-"python3 adjust_columnar_code.py calculator.py i 1 10" will indent lines 1 through 10 inclusive. <br/> <br/>
-"python3 adjust_columnar_code.py calculator.py i 1 10 safe" will create a new file and put the updated code there that is indented/unindented <br/>
+  <i> python3 adjust_columnar_code.py calculator.py i 1 10 </i>
+  will indent lines 1 through 10 inclusive. <br/> <br/>
+  <i> python3 adjust_columnar_code.py calculator.py i 1 10 safe </i>
+  will create a new file and put the updated code there that is indented/unindented <br/>
 
 Also, if there is an indentation command line error and you are using Sublime, you can select all, go to View, then Indentation,
 and "Convert Indentation to Spaces".
